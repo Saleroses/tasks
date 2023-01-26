@@ -35,11 +35,17 @@ function makeUpperCase(str) {
     console.log("Highest babble score: " + highScore);
     }
 
+// Из книги -------------------------------
 
 
-tabl ();
-
-
-
-
- // Из книги -------------------------------
+  // CW расчет топлива
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  
+    if (distanceToPump / mpg <= fuelLeft) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+  
+  // CW расчет топлива
