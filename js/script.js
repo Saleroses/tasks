@@ -19,11 +19,9 @@ function makeUpperCase(str) {
   // Из книги -------------------------------
   let scores = [60, 50, 60, 58, 54, 54, 58, 50, 52, 54, 48, 69, 34, 55, 51, 52, 44, 51, 69, 64, 66, 55, 52, 61, 46, 31, 57, 52, 44, 18, 41, 53, 55, 61, 51, 44];
 
-  let output;
- 
-  let highScore = 0;
-
-  function tabl () {
+function tabl () {
+    let output;
+    let highScore = 0;
         for (let i = 0; i < scores.length; i++) {
             output = "Мыльный раствор #" + i + " баллы: " + scores[i];
             console.log(output);
@@ -33,17 +31,23 @@ function makeUpperCase(str) {
         }
         console.log("Растворов всего: " + scores.length);
         console.log("Лучний тестируемый, баллов: " + highScore);
+    return highScore;
+}
 
-        let bestSolution = [];
-        for (let i = 0; i < scores.length; i++)
-        if (scores[i] == highScore) {
-            bestSolution.push(i);
-        }
-        console.log("Лучший балл набрали образцы: " + bestSolution);
+function best (scores, highScore) {
+    let bestSolution = [];
+    for (let i = 0; i < scores.length; i++)
+    if (scores[i] == highScore) {
+        bestSolution.push(i);
     }
-
+    console.log("Лучший балл набрали образцы: " + bestSolution);
+    return bestSolution;
     
-   tabl ();
+}
+ let highScore = tabl();
+ let bestSolution = best (scores, highScore)
+
+   
 // Из книги -------------------------------
 
 
