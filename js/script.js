@@ -26,13 +26,12 @@ function tabl () {
     let highScore = 0;
         for (let i = 0; i < scores.length; i++) {
             output = "Мыльный раствор #" + i + " баллы: " + scores[i];
-            console.log(output);
             if (scores[i] > highScore) {
                 highScore = scores[i];
             }
         }
-        console.log("Растворов всего: " + scores.length);
-        console.log("Лучний тестируемый, баллов: " + highScore);
+        //console.log("Растворов всего: " + scores.length);
+        //console.log("Лучний тестируемый, баллов: " + highScore);
     return highScore;
 }
 
@@ -42,7 +41,7 @@ function best (scores, highScore) {
     if (scores[i] == highScore) {
         bestSolution.push(i);
     }
-    console.log("Лучший балл набрали образцы: " + bestSolution);
+    //console.log("Лучший балл набрали образцы: " + bestSolution);
     return bestSolution;  
 }
 
@@ -59,13 +58,9 @@ function effective (scores, costs, highScore) {
             cost = costs[i];
         }
     }
-    console.log("best " + index);
+   // console.log("best " + index);
     return index;
 }
-
-
-
-
 
    
 // Из книги -------------------------------
@@ -96,9 +91,42 @@ function sum (numbers) {
 
   // Создание пустого массива
 
-  // Расчет возраста х2
+  // Расчет возраста отца х2
   function twiceAsOld(dadYearsOld, sonYearsOld) {
     return Math.abs(dadYearsOld - 2 * sonYearsOld);
   }
-// Расчет возраста х2
+// Расчет возраста отца х2
 
+//Расчет возраста кошки и собаки по человеческим меркам
+var humanYearsCatYearsDogYears = function(humanYears) {
+    let catYears;
+    let dogYears;
+    
+    if (humanYears == 1) {
+      catYears = 15;
+      } if (humanYears == 2) {
+      catYears = 15 + 9;
+        } if (humanYears >= 3) {
+      catYears = 15 + 9 + ((humanYears - 2) * 4);
+          }
+    
+    if (humanYears == 1) {
+      dogYears = 15;
+      } if (humanYears == 2) {
+      dogYears = 15 + 9;
+        } if (humanYears >= 3) {
+      dogYears = 15 + 9 + ((humanYears - 2) * 5);
+          }
+    
+    return [humanYears,catYears,dogYears];
+}
+  //Расчет возраста кошки и собаки по человеческим меркам
+
+  // Строка в число
+  const stringToNumber = function(str){
+    var x = Number(str);
+    return x;
+  }
+    // Строка в число
+
+    
