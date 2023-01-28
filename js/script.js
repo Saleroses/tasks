@@ -50,7 +50,7 @@ let highScore = tabl();
 let bestSolution = best (scores, highScore)
 
 function effective (scores, costs, highScore) {
-    let cost = 100;
+    let cost = 50;
     let index;
     for (let i = 0; i < scores.length; i++)
     if (scores[i] == highScore) {
@@ -62,7 +62,7 @@ function effective (scores, costs, highScore) {
     console.log("best " + index);
     return index;
 }
-effective (scores, costs, highScore);
+
 
 
 
@@ -95,4 +95,10 @@ function sum (numbers) {
   massive.push("number2");
 
   // Создание пустого массива
+
+  // Расчет возраста х2
+  function twiceAsOld(dadYearsOld, sonYearsOld) {
+    return Math.abs(dadYearsOld - 2 * sonYearsOld);
+  }
+// Расчет возраста х2
 
