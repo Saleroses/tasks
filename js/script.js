@@ -120,13 +120,23 @@ var humanYearsCatYearsDogYears = function(humanYears) {
     
     return [humanYears,catYears,dogYears];
 }
-  //Расчет возраста кошки и собаки по человеческим меркам
+//Расчет возраста кошки и собаки по человеческим меркам
 
-  // Строка в число
+// Строка в число
   const stringToNumber = function(str){
     var x = Number(str);
     return x;
   }
-    // Строка в число
+// Строка в число
 
-    
+//updateLight
+function updateLight(current) {
+  if(current === "green") {
+    return "yellow";
+  } else if(current === "yellow") {
+      return "red";
+  } else if(current === "red") {
+      return "green";
+  }
+}
+//updateLight
