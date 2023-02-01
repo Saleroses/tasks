@@ -167,8 +167,40 @@ function finalGrade (exam, projects) {
 }
 //finalGrade 
 
-//finalGrade 
+//boolToWord 
 function boolToWord( bool ){
   return bool ? 'Yes':'No';
 }
-//finalGrade 
+//boolToWord
+
+//second
+function past(h, m, s){
+  return h * 3600000 + m * 60000  + s * 1000;
+}
+//second
+
+//passagiri
+function enough(cap, on, wait) {
+  if (wait <= (cap - on)) {return 0;}
+  else {return (wait + on) - cap}
+}
+//passagiri
+
+//bmi
+function bmi(weight, height) {
+  if (weight / (height**2) <= 18.5) 
+   {return "Underweight";}
+  if (weight / (height**2) <= 25 && weight / (height**2) > 18.5) 
+    {return "Normal";}
+  if (weight / (height**2) <= 30 && weight / (height**2) > 25) 
+   {return "Overweight";}
+  if (weight / (height**2) > 30) 
+    {return "Obese";}
+  }
+  //bmi
+
+  //String
+  function numberToString(num) {
+    return String(num)
+  }
+  //String
