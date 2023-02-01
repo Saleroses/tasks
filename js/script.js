@@ -204,3 +204,31 @@ function bmi(weight, height) {
     return String(num)
   }
   //String
+
+  //
+  function sayHello(name) {
+    return 'Hello, ' + name
+  } 
+  //
+
+  //
+  function rentalCarCost(d) {
+    let total = 0;
+    if (d < 3) {
+      total = d*40;
+    } if (d >= 3 && d < 7) {
+      total = d*40-20;
+    } if (d >= 7) {
+      total = d*40-50;
+    }
+    return total
+  }
+  //
+
+  //
+  function positiveSum(arr) {
+    return arr.filter(i => i > 0).reduce((a,b)=>a+b,0)
+  }
+  //
+
+  
