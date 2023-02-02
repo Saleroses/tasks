@@ -231,4 +231,40 @@ function bmi(weight, height) {
   }
   //
 
-  
+  // 
+  function prequal(car) {
+    if (car.mileage > 10000) {
+      return false;
+    } else if (car.year > 1960) {
+      return false;
+    }
+    return true;
+  }
+
+  let taxi = {
+    make: "Webville Motors",
+    model: "Taxi",
+    year: 1955,
+    color: "yelloy",
+    passengers: 4,
+    convertible: false,
+    mileage: 281341
+  }
+
+  let maxi = {
+    make: "Webville Motors",
+    model: "Taxi",
+    year: 1959,
+    color: "yelloy",
+    passengers: 4,
+    convertible: false,
+    mileage: 1341
+  }
+
+  let wothALook = prequal(maxi);
+
+  if (wothALook) {
+    console.log("jniupbpui " + maxi.make + " " + maxi.model);
+  } else {
+    console.log("no " + maxi.make + " " + maxi.model);
+  }
