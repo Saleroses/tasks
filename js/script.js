@@ -231,11 +231,11 @@ function bmi(weight, height) {
   }
   //
 
-  // 
-  function prequal(car) {
-    if (car.mileage > 10000) {
+  //////////
+  function prequal(cars) {
+    if (cars.mileage > 10000) {
       return false;
-    } else if (car.year > 1960) {
+    } else if (cars.year > 1960) {
       return false;
     }
     return true;
@@ -260,11 +260,23 @@ function bmi(weight, height) {
     convertible: false,
     mileage: 1341
   }
+  //  console.log(prequal(maxi))
+  ////////////
 
-  let wothALook = prequal(maxi);
+  //////////
+  function findDifference(a, b) {
+      let finA = 0;
+      let finB = 0;
+     
+     finA = a[0]*a[1]*a[2];
+     finB = b[0]*b[1]*b[2];
+     
+     if (finA > finB) {
+      return finA - finB
+     } else {
+      return finB - finA
+      }
+   }
+   ///////////
 
-  if (wothALook) {
-    console.log("jniupbpui " + maxi.make + " " + maxi.model);
-  } else {
-    console.log("no " + maxi.make + " " + maxi.model);
-  }
+   
