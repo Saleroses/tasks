@@ -309,7 +309,7 @@ let car = {
 };
 
 let names = "power";
-console.log(car[names]);  
+//console.log(car[names]);  
 
 ///
 function hero(bullets, dragons){
@@ -325,3 +325,38 @@ function makeNegative(num) {
   return num*0-num
 }
 /////
+function makeNegative(num) {
+  if (num >= 0) {
+    return num*0-num
+  } else {
+    return num
+  }
+}
+////
+
+/////
+function setAlarm(employed, vacation){
+  if (employed == true && vacation == false) {
+    return true
+  } else {
+    return false
+  }
+}
+//////
+
+//
+function getRealFloor(n) {
+  if (n > 0 && n < 13) {
+    return n-1
+  } if (n >= 13) {
+    return n-2
+  } if (n <= 0) {
+    return n
+  } 
+}
+///
+function countSheeps(arrayOfSheep) {
+  const count = arrayOfSheep.filter(Boolean).length;
+  return count
+}
+////
