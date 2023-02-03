@@ -279,4 +279,49 @@ function bmi(weight, height) {
    }
    ///////////
 
-   
+   //
+let min = function(list){
+    
+    return Math.min.apply(null, list);
+}
+
+let max = function(list){
+    
+    return Math.max.apply(null, list);
+}
+//
+
+//
+function sumStr(a,b) {
+  let c;
+  let d;
+  let fin;
+  c = Number(a);
+  d = Number(b);
+  fin = c+d
+  return String(fin);
+}
+/////////
+
+let car = {
+  name: "Cool",
+  power: "450 Hp",
+};
+
+let names = "power";
+console.log(car[names]);  
+
+///
+function hero(bullets, dragons){
+  if (bullets >= dragons*2) {
+    return true
+  } else {
+    return false
+  }
+}
+/////
+////
+function makeNegative(num) {
+  return num*0-num
+}
+/////
