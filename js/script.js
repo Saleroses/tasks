@@ -392,8 +392,6 @@ if (num < 5) {
   // Only change code above this line
 }
 //////
-const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
-
 function golfScore(par, strokes) {
     if(strokes == 1) return "Hole-in-one!";
     else if(strokes <= par -2) return "Eagle";
@@ -440,3 +438,32 @@ function reverseWords(str) {
   }).join(' ');
 }
 /////
+function reverseList(list) {
+  return list.reverse();
+}
+
+///
+function digitize(n) {
+  return String(n).split("").reverse().map(Number);
+
+}
+/// удалить первый и последний символ
+function removeChar(str){
+  return str.slice(1,-1)
+ };
+ //// сложение чисел в массиве
+ var summation = function (num) {
+  let sum = 0
+    for(let i = 0; i <= num; i++) {
+        sum += i
+    }
+    return sum
+}
+
+////
+
+
+
+
+
+
