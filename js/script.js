@@ -428,3 +428,15 @@ function caseInSwitch(val) {
   return answer;
 }
 //////
+///
+var numbers = [4, 2, 5, 1, 3];
+numbers.sort(function(a, b) {
+  return a - b;
+});
+////
+function reverseWords(str) {
+  return str.split(' ').map(function(word){
+    return word.split('').reverse().join('');
+  }).join(' ');
+}
+/////
