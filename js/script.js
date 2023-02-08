@@ -451,16 +451,31 @@ function digitize(n) {
 function removeChar(str){
   return str.slice(1,-1)
  };
- //// сложение чисел в массиве
- var summation = function (num) {
+ //// сложение чисел 8 -> 36 (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8)
+ function summation (num) {
   let sum = 0
     for(let i = 0; i <= num; i++) {
         sum += i
     }
-    return sum
+    console.log(sum)
 }
 
 ////
+function saleHotdogs(n){
+  if (n<5) { return n*100 } 
+  else if (n >= 5 && n < 10) {return n*95}
+  else {return n*90} 
+}
+////////
+
+function grow(x){
+  let res = 1;
+  for (let i = 0; i < x.length; i++) {
+    res *= x[i];
+  }
+  return res;
+}
+///////
 
 
 
