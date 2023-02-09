@@ -540,5 +540,34 @@ function oddOrEven(array) {
     return "even"
   }
 }
+///// сравнение первой и последней буквы строки
+function feast(beast, dish) {
+  if (beast[0] == dish[0] && beast.substr(-1) == dish.substr(-1)) {
+    return true
+  } else {
+    return false
+  }
+}
+//////////
 
+let song = {
+  name: "Walk",
+  artist: "run",
+  minutes: 4,
+  seconds: 3,
+  playing: false,
 
+    play: function(){
+      if (!this.playing) {
+        this.playing = true;
+        console.log("Playing " + this.name + " " + this.artist)
+      }
+    },
+    pause: function(){
+      if (this.playing){
+        this.playing = false;
+      }
+    }
+}
+
+song.pause();
