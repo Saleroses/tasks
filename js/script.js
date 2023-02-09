@@ -529,11 +529,16 @@ function evenOrOdd(number) {
   }
 }
 /////// Сумма массива + вычисление результата четн/нечет
-let array = [1,1,4];
 function oddOrEven(array) {
   let sum = array.reduce((a, b) => a + b, 0);
-  console.log(sum)
+ 
+  if (sum % 2 == 0) {
+    return "even"
+  } else if (sum % 2 != 0) {
+    return "odd"
+  } else {
+    return "even"
+  }
 }
-oddOrEven(array);
 
 
