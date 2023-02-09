@@ -476,9 +476,64 @@ function grow(x){
   return res;
 }
 ///////
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return length*width*height
+  }
+}
+/////
 
+function litres(time) {
+  return Math.trunc(time/2)
+}
+///
 
+function unusualFive() {
+  let five = "irkaa"
+  return five.length
+}
+/////
+function smash (words) {
+  return words.join(" ");
+}
+//////
 
-
+function countPositivesSumNegatives(input) {
+  if (input == null || input.length == 0)
+    return [];
+  
+  var positive = 0;
+  var negative = 0;
+  
+  for (var i=0, l=input.length; i<l; ++i)
+  {
+    if (input[i] > 0)
+      ++ positive;
+    else
+      negative += input[i];
+  }
+  
+  return [positive, negative];
+}
+//////
+let object = {
+  name: "irka",
+  prikol: "pipirka",
+}
+///// остаток от деления 
+function evenOrOdd(number) {
+  if (number % 2 != 0){
+    return "Odd"
+  } else {
+    return "Even"
+  }
+}
+/////// Сумма массива + вычисление результата четн/нечет
+let array = [1,1,4];
+function oddOrEven(array) {
+  let sum = array.reduce((a, b) => a + b, 0);
+  console.log(sum)
+}
+oddOrEven(array);
 
 
